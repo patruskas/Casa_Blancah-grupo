@@ -186,6 +186,11 @@ button
     left:64px;
 }
 
+.card-img-top
+{
+    width: 50px;
+    margin: auto;
+}
 
 /*footer*/
 
