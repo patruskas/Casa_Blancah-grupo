@@ -1,0 +1,83 @@
+/*home*/
+
+.h-main
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: stretch;
+}
+
+.h-main__text
+{
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 0.18em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    align-self: center;
+}
+
+@media screen AND (min-width:480px)
+{
+    @keyframes small_words 
+    {
+        from {font-size: 35px;}
+        to {font-size: 20px;}  
+    }
+    @keyframes big_words 
+    {
+        from {font-size: 35px;}
+        to {font-size: 45px;}  
+    }
+    .h-main__text--small
+    {
+        animation-name: small_words;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+    .h-main__text--big
+    {
+        animation-name: big_words;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+
+}
+
+/*mobile*/
+
+@media  screen AND (max-width: 480px) 
+{
+    .h-main
+    {
+        grid-template-columns: 1fr;
+        background-image: url(../images/home/home_image.svg);
+        height: 690px;
+    }
+    .h-main__image
+    {
+        display: none;
+    }
+    .h-main__title
+    {
+        font-size: 26px;
+    }
+    .h-main__text
+    {
+        font-size: 21px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    .h-main__text--small
+    {
+        font-size: 70%;
+        font-weight: 300; 
+    }
+    .h-main__text--big
+    {
+        font-weight: 400; 
+        font-size: 120%;
+    }
+}
