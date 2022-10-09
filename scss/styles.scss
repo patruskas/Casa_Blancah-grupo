@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+@import "../scss/colors";
+@import "../scss/font";
+@import "../scss/sobrenos";
+
+
+
+body
+{
+    font-family: $font-family;
+    background-color: #F2F2F2;
+}
+
+.btn
+{
+    border: 0.5px solid $border;
+    background-color: $bg-medium;
+    letter-spacing: 0.18em;
+}
+.nav-item :hover 
+{
+    background-color: $bg-card;
+}
+.card-footer
+{
+    background-color: $bg-medium;
+    width: 100%;
+}
+
+@media screen AND (min-width: 992px)
+{
+    .nav-link--border
+    {
+        border: $bg-dark 1px solid;
+        border-radius: 3.5px; 
+    }
+}

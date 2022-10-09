@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+@import "../scss/colors";
+@import "../scss/font";
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+/*texto principal*/
+
+.video
+{
+    text-align:center;
+    height:230px;
+    margin-top:10px;
+    margin-bottom:-12px;
+    
+}
+
+.grid-iten-main
+{
+    display:flex;
+}
+.sobrenos__lista
+{
+display: flex;
+flex-direction:column;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 275;
+font-size: 20px;
+margin: 30px;
+}
+
+.lista__1
+{
+text-align:center;
+margin-bottom:10px;    
+}
+
+.lista__2
+{
+text-align:center;
+margin-bottom:10px;    
+}
+
+.lista__3
+{
+text-align:center;
+margin-bottom:10px;    
+}
+
+/*button*/
+
+.grid-item-main
+{
+    text-align: center;
+}
+
+button
+{
+    border: 0.5px solid;
+    border-radius: 3.5px;
+    text-decoration: none;
+    background-color: $bg-medium;
+    font-size: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+/*bottom*/
+
+.grid-item-bottom
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+
+.sobrenos__article
+{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 275;
+    background: $bg-card(217, 217, 217, 0.75);
+    box-shadow: 7px 4px 4px $shadow;
+    border-radius: 5px;
+    width: 195px;
+    height: 197px;
+    left:64px;
+    top:1197px;
+}
+
+.sobrenos__article__title
+{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    left:64px;
+}
+
+.card-img-top
+{
+    width: 50px;
+    margin: auto;
+}
+
+/*footer*/
+
+footer
+{
+    background-color: $bg-medium;
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid $font-dark;
+}
+
+footer p 
+{
+    font-size:16px;
+}
+
+
+@media screen AND (max-width: 480px)
+{ 
+
+.video 
+{
+    width:100%;
+}
+
+button
+{
+    font-size:80%;
+}
+
+.card-text
+{
+    overflow-wrap: normal;
+}
+
+}
