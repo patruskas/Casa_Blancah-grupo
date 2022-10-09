@@ -1,0 +1,169 @@
+/*contato*/
+
+.c-main
+{
+    background-image: url(../images/contato/casal_de_noivos.svg);
+    height: 688px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $font-light;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    &__card
+    {
+       
+        ::placeholder
+        {
+            color: $placeholder;
+        }
+        background: $bg-card-dark;
+        font-size: map-get($font-size, medium);
+        box-shadow: 0px 4px 4px $shadow;
+        padding: 30px;
+        width: 90%;
+        &__title
+        {
+            color: $font-light;
+            font-weight: 400;
+            font-size: map-get($font-size, large);
+            background-color: $bg-dark;
+            padding: 10px 40px;
+            margin-bottom: 40px;
+            grid-area: titulo;
+        }
+    }
+    &__form
+    {
+        background: $bg-card-dark;
+        box-shadow: 0px 4px 4px $shadow;
+        font-size: map-get($font-size, medium);
+        padding: 30px;
+        margin-right: 20px;
+        display: grid;
+        grid-gap: 15px;
+        grid-template-areas: 
+            "titulo titulo"
+            "nome nome"
+            "sobrenome sobrenome"
+            "email email"
+            "telefone tipo_evento"
+            "data quantidade"
+            "recado recado"
+            "botao botao";
+        &__title
+        {
+            color: $font-light;
+            font-size: map-get($font-size, large);
+            font-weight: 400;
+            background-color: $bg-dark;
+            padding: 10px 40px;
+            margin-bottom: 40px;
+            grid-area: titulo;
+        }
+        input, textarea, select
+        {
+            background-color: $bg-medium;
+            border: 1px solid $border;
+            box-shadow: -1px 5px 4px $shadow;
+            font-size: 14px;
+        }
+        textarea
+        {
+            width: 100%;
+            height: 80px;
+            grid-area: recado;
+        }
+        .nome
+        {
+            grid-area: nome;
+        }
+        .sobrenome
+        {
+            grid-area: sobrenome;
+        }
+        .email
+        {
+            grid-area: email;
+        }
+        .telefone
+        {
+            grid-area: telefone;
+        }
+        .tipo_evento
+        {
+            grid-area: tipo_evento;
+        }
+        .data
+        {
+            grid-area: data;
+        }
+        .quantidade
+        {
+            grid-area: quantidade;
+        }
+        .botao
+        {
+            grid-area: botao;
+        }
+    }
+}
+
+@media screen AND (max-width: 768px)
+{
+    .c-main
+    {
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+        height: auto;
+        margin: auto;
+        width: 100%;
+        &__card
+        {
+            margin: 15px 0 30px 0;
+            width: 60%;
+            font-size: map-get($font-size, small);
+            &__title
+            {
+                font-size: map-get($font-size, medium);
+            }
+        }
+        &__form
+        {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            width: 60%;
+            font-size: map-get($font-size, medium);
+            &__title
+            {
+                font-size: map-get($font-size, medium);
+            }
+        }
+    }
+    
+}
+
+
+@media screen AND (max-width: 576px)
+{
+    .c-main
+    {
+        &__card
+        {
+            width: 100%;
+        }
+        &__form
+        {
+            width: 100%;
+            textarea
+            {
+                height: 120px;
+            }
+        }
+    }
+}

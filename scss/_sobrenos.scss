@@ -1,10 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
-@import "../scss/colors";
-@import "../scss/font";
-
-
 *{
     margin: 0%;
     padding: 0%;
@@ -113,22 +106,6 @@ button
     width: 50px;
     margin: auto;
 }
-
-/*footer*/
-
-footer
-{
-    background-color: $bg-medium;
-    text-align: center;
-    padding: 30px;
-    border-top: 1px solid $font-dark;
-}
-
-footer p 
-{
-    font-size:16px;
-}
-
 
 @media screen AND (max-width: 480px)
 { 

@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
+/*contato*/
+.c-main {
+  background-image: url(../images/contato/casal_de_noivos.svg);
+  height: 688px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center; }
+  .c-main__card {
+    background: rgba(61, 58, 58, 0.7);
+    font-size: 23px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+    width: 90%; }
+    .c-main__card input, .c-main__card textarea, .c-main__card select {
+      background-color: #D9D9D9;
+      border: 1px solid #b6b6b6;
+      box-shadow: -1px 5px 4px rgba(0, 0, 0, 0.25);
+      font-size: 14px; }
+    .c-main__card ::placeholder {
+      color: #8c8c8c; }
+    .c-main__card__title {
+      color: #FFFFFF;
+      font-weight: 400;
+      font-size: 30px;
+      background-color: #404040;
+      padding: 10px 40px;
+      margin-bottom: 40px;
+      grid-area: titulo; }
+  .c-main__form {
+    background: rgba(61, 58, 58, 0.7);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 23px;
+    padding: 30px;
+    margin-right: 20px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas: "titulo titulo" "nome nome" "sobrenome sobrenome" "email email" "telefone tipo_evento" "data quantidade" "recado recado" "botao botao"; }
+    .c-main__form__title {
+      color: #FFFFFF;
+      font-size: 30px;
+      font-weight: 400;
+      background-color: #404040;
+      padding: 10px 40px;
+      margin-bottom: 40px;
+      grid-area: titulo; }
+    .c-main__form textarea {
+      width: 100%;
+      height: 80px;
+      grid-area: recado; }
+    .c-main__form .nome {
+      grid-area: nome; }
+    .c-main__form .sobrenome {
+      grid-area: sobrenome; }
+    .c-main__form .email {
+      grid-area: email; }
+    .c-main__form .telefone {
+      grid-area: telefone; }
+    .c-main__form .tipo_evento {
+      grid-area: tipo_evento; }
+    .c-main__form .data {
+      grid-area: data; }
+    .c-main__form .quantidade {
+      grid-area: quantidade; }
+    .c-main__form .botao {
+      grid-area: botao; }
+
+@media screen and (max-width: 768px) {
+  .c-main {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+    height: auto;
+    margin: auto;
+    width: 100%; }
+    .c-main__card {
+      margin: 15px 0 30px 0;
+      width: 60%;
+      font-size: 14px; }
+      .c-main__card__title {
+        font-size: 23px; }
+    .c-main__form {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      width: 60%;
+      font-size: 14px; }
+      .c-main__form__title {
+        font-size: 23px; } }
+
+@media screen and (max-width: 576px) {
+  .c-main__card {
+    width: 100%; }
+  .c-main__form {
+    width: 100%; }
+    .c-main__form textarea {
+      height: 120px; } }
+
+.e-main .card-body {
+  background-color: rgba(242, 225, 195, 0.8);
+  width: 100%; }
+  .e-main .card-body .card-title {
+    color: #58391d; }
+
+.e-main .card-container .card-image {
+  width: 100%; }
+
+.e-main .card-container--reverse .card-image {
+  width: 100%; }
+
+@media screen and (min-width: 992px) {
+  .e-main .card {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    width: fit-content;
+    background-color: #F2F2F2;
+    border: none; }
+    .e-main .card .card-image {
+      width: 600px; }
+    .e-main .card .card-body {
+      left: 564px;
+      top: 70px;
+      border-radius: 3.5px;
+      position: absolute;
+      padding: 40px;
+      background-color: rgba(242, 225, 195, 0.8);
+      width: 600px;
+      height: fit-content;
+      font-weight: 400;
+      font-size: 30px; }
+    .e-main .card .card-body--reverse {
+      left: 173px;
+      top: 70px;
+      border-radius: 3.5px;
+      position: absolute;
+      padding: 40px;
+      background-color: rgba(242, 225, 195, 0.8);
+      width: 600px;
+      height: fit-content;
+      font-weight: 400;
+      font-size: 30px; }
+    .e-main .card .card-container {
+      position: relative;
+      margin-right: 610px;
+      background-color: #F2F2F2; }
+    .e-main .card .card-container--reverse {
+      display: relative;
+      margin-left: 735px;
+      background-color: #F2F2F2; }
+    .e-main .card .card-image:hover {
+      transform: rotate(4deg);
+      transition-duration: 2s; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F2F2F2;
+  font-size: 23px; }
+  body .nav-item :hover {
+    background-color: rgba(242, 225, 195, 0.8); }
+  body .btn {
+    border: 0.5px solid #b6b6b6;
+    background-color: #D9D9D9;
+    font-size: 23px;
+    letter-spacing: 0.18em; }
+  body .card-footer {
+    background-color: #D9D9D9;
+    width: 100%; }
+
+@media screen and (min-width: 992px) {
+  .nav-link--border {
+    border: #b6b6b6 1px solid;
+    border-radius: 3.5px; } }

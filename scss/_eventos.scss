@@ -1,0 +1,87 @@
+@mixin eventos-cards 
+{
+    border-radius: 3.5px; 
+    position: absolute;
+    padding: 40px;
+    background-color: $bg-card;
+    width: 600px;
+    height: fit-content;
+    font-weight: 400;
+    font-size: map-get($font-size, large);
+}
+.e-main
+{
+    .card
+    {
+        &-body
+        {
+            background-color: rgba(242, 225, 195, 0.8);
+            width: 100%;
+            .card-title
+            {
+                color: $font-title;
+            }
+        }
+        &-container
+        {
+            .card-image
+            {
+                width: 100%;
+            }
+        }
+        &-container--reverse
+        {
+            .card-image
+            {
+                width: 100%;
+            }
+        }
+    }
+        @media screen AND (min-width: 992px)
+        {
+            .card
+            {
+                margin-top: 35px;
+                margin-bottom: 35px; 
+                width: fit-content;
+                background-color: $bg-light;
+                border: none;
+                .card-image
+                {
+                    width: 600px;
+                }
+                .card-body
+                {
+                    left: 564px;
+                    top: 70px;
+                    @include eventos-cards;
+                }
+                .card-body--reverse
+                {
+                    left: 173px;
+                    top: 70px;
+                    @include eventos-cards;
+                }
+                .card-container
+                {
+                    position: relative;
+                    margin-right: 610px;
+                    background-color: $bg-light;
+                }
+                .card-container--reverse
+                {
+                    display: relative;
+                    margin-left: 735px;
+                    background-color: $bg-light;
+                }
+                .card-image:hover
+                {
+                    transform: rotate(4deg);
+                    transition-duration: 2s;
+                }
+            }
+        }
+}
+
+
+
